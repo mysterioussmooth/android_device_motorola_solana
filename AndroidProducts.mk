@@ -12,4 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq ($(filter full_solana aokp_solana,$(TARGET_PRODUCT)),)
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_solana.mk
+endif

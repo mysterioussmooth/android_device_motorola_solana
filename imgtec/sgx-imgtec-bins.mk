@@ -1,4 +1,5 @@
 # Graphics/IMGTEC
+ifeq ($(TARGET_DEVICE),solana)
 SGX_LOCAL_PATH := device/motorola/solana/imgtec
 
 SGX_MODULES:
@@ -28,3 +29,4 @@ PRODUCT_COPY_FILES += \
     $(SGX_LOCAL_PATH)/bin/pvrsrvinit_SGX540_120:/system/vendor/bin/pvrsrvinit_SGX540_120 \
     $(SGX_LOCAL_PATH)/etc/powervr.ini:/system/etc/powervr.ini \
 
+endif
