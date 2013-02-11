@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2013 The LiquidSmooth Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter full_solana aokp_solana,$(TARGET_PRODUCT)),)
+ifneq ($(filter full_solana liquid_solana,$(TARGET_PRODUCT)),)
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_solana.mk
 endif
